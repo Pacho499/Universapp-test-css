@@ -1,6 +1,9 @@
+@import './utils';
+
 #hero-section{
     background: black;
     color: white;
+    height: 85vh;
     .hero-section{
         margin: 0 4rem;
         padding-top: 7rem;
@@ -12,14 +15,47 @@
                 font-size: 60px;
             }
 
-            p{
+            .p-hero{
                 font-size: 20px;
                 margin-top: 2rem;
-                margin-bottom: 1rem;
+            }
+
+            .box-esterno{
+                margin-top: 1rem;
+                .box-interno{
+                    
+                    background: rgba(0, 255, 0, 0.1);
+                    border: 2px solid green;
+                    border-radius: 20px;
+                    display: flex;
+                    justify-content: space-between;
+                    max-width: 300px;
+                    padding: 10px 20px;
+                    position: relative;
+                    bottom: 110px;
+                    left: 20px;
+                    
+                    .box-btn{
+                        background: $span-color;
+                        border-radius: 20px;
+                        color: white;
+                        text-decoration: none;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding: 0 10px;
+                    }
+                }
             }
         }
           
-            
+        .hero-right{
+            .cube_S{
+                position: relative;
+                bottom: 400px;
+                opacity: 0;
+            }
+        }  
         
     }
 }

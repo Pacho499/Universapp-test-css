@@ -43,6 +43,7 @@
 #hero-section {
   background: black;
   color: white;
+  height: 85vh;
 }
 
 #hero-section .hero-section {
@@ -58,9 +59,52 @@
   font-size: 60px;
 }
 
-#hero-section .hero-section .hero-left p {
+#hero-section .hero-section .hero-left .p-hero {
   font-size: 20px;
   margin-top: 2rem;
-  margin-bottom: 1rem;
+}
+
+#hero-section .hero-section .hero-left .box-esterno {
+  margin-top: 1rem;
+}
+
+#hero-section .hero-section .hero-left .box-esterno .box-interno {
+  background: rgba(0, 255, 0, 0.1);
+  border: 2px solid green;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 300px;
+  padding: 10px 20px;
+  position: relative;
+  bottom: 110px;
+  left: 20px;
+}
+
+#hero-section .hero-section .hero-left .box-esterno .box-interno .box-btn {
+  background: #ff0076;
+  border-radius: 20px;
+  color: white;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 10px;
+}
+
+#hero-section .hero-section .hero-right .cube_S {
+  position: relative;
+  bottom: 400px;
+  opacity: 0;
 }
 /*# sourceMappingURL=style.css.map */

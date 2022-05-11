@@ -1,6 +1,8 @@
 @import './utils';
 
 #hero-section{
+    animation-name: text-change;
+    animation-duration: 4s;
     background: black;
     color: white;
     height: 85vh;
@@ -9,8 +11,9 @@
         padding-top: 7rem;
         display: grid;
         grid-template-columns: 1fr 1fr;
-
+        
         .hero-left{
+
             h1{
                 font-size: 60px;
             }
@@ -24,8 +27,8 @@
                 margin-top: 1rem;
                 .box-interno{
                     
-                    background: rgba(0, 255, 0, 0.1);
-                    border: 2px solid green;
+                    background: rgba(20, 54, 57, 0.7);
+                    border: 2px solid rgb(17, 72, 61);
                     border-radius: 20px;
                     display: flex;
                     justify-content: space-between;
@@ -36,6 +39,11 @@
                     left: 20px;
                     
                     .box-btn{
+                        animation-name: hero-btn;
+                        animation-duration: 4s;
+                       
+                        
+
                         background: $span-color;
                         border-radius: 20px;
                         color: white;
@@ -57,5 +65,27 @@
             }
         }  
         
+    }
+}
+
+@keyframes hero-btn {
+    from{
+        width: 300px;
+        color: $span-color;
+    }
+
+    to{
+       width: 113px;
+       color: white;
+    }
+}
+
+@keyframes text-change{
+    from{
+        color: black;
+    }
+
+    to{
+        color: white;
     }
 }

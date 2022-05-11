@@ -41,6 +41,10 @@
 }
 
 #hero-section {
+  -webkit-animation-name: text-change;
+          animation-name: text-change;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
   background: black;
   color: white;
   height: 85vh;
@@ -69,8 +73,8 @@
 }
 
 #hero-section .hero-section .hero-left .box-esterno .box-interno {
-  background: rgba(0, 255, 0, 0.1);
-  border: 2px solid green;
+  background: rgba(20, 54, 57, 0.7);
+  border: 2px solid #11483d;
   border-radius: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -86,6 +90,10 @@
 }
 
 #hero-section .hero-section .hero-left .box-esterno .box-interno .box-btn {
+  -webkit-animation-name: hero-btn;
+          animation-name: hero-btn;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
   background: #ff0076;
   border-radius: 20px;
   color: white;
@@ -106,5 +114,45 @@
   position: relative;
   bottom: 400px;
   opacity: 0;
+}
+
+@-webkit-keyframes hero-btn {
+  from {
+    width: 300px;
+    color: #ff0076;
+  }
+  to {
+    width: 113px;
+    color: white;
+  }
+}
+
+@keyframes hero-btn {
+  from {
+    width: 300px;
+    color: #ff0076;
+  }
+  to {
+    width: 113px;
+    color: white;
+  }
+}
+
+@-webkit-keyframes text-change {
+  from {
+    color: black;
+  }
+  to {
+    color: white;
+  }
+}
+
+@keyframes text-change {
+  from {
+    color: black;
+  }
+  to {
+    color: white;
+  }
 }
 /*# sourceMappingURL=style.css.map */

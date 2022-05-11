@@ -1,5 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
 * {
-  border: 0;
   margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+#header {
+  background: black;
+  height: 15vh;
+}
+
+#header .header-inside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 14rem;
+  padding-top: 1.6rem;
+}
+
+#header .header-inside .nav_bar {
+  list-style: none;
+}
+
+#header .header-inside .nav_bar a {
+  color: white;
+  text-decoration: none;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, #4004ca), color-stop(50%, #33ffd9));
+  background-image: linear-gradient(90deg, #4004ca 50%, #33ffd9 50%);
+  background-size: 100% 4px;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  padding-bottom: 8px;
+  margin-left: 3rem;
+}
+
+#hero-section {
+  background: black;
+  color: white;
+}
+
+#hero-section .hero-section {
+  margin: 0 4rem;
+  padding-top: 7rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+#hero-section .hero-section .hero-left h1 {
+  font-size: 60px;
+}
+
+#hero-section .hero-section .hero-left p {
+  font-size: 20px;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 /*# sourceMappingURL=style.css.map */

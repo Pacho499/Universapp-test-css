@@ -27,8 +27,9 @@
                 margin-top: 1rem;
                 .box-interno{
                     
-                    background: rgba(20, 54, 57, 0.7);
-                    border: 2px solid rgb(17, 72, 61);
+                    background: linear-gradient(360deg, rgba(79, 107, 101,0.4), rgba(20, 54, 52,0.4) );
+                    backdrop-filter: blur(12px);
+                    border: 2px solid rgba(255, 255, 255, 0.2);
                     border-radius: 20px;
                     display: flex;
                     justify-content: space-between;
@@ -41,10 +42,8 @@
                     .box-btn{
                         animation-name: hero-btn;
                         animation-duration: 4s;
-                       
                         
-
-                        background: $span-color;
+                        background: linear-gradient(0.25turn, #ff007b, #ff02ec  );
                         border-radius: 20px;
                         color: white;
                         text-decoration: none;
@@ -52,6 +51,11 @@
                         justify-content: space-between;
                         align-items: center;
                         padding: 0 10px;
+
+                        &:hover{
+                            background: linear-gradient(0.25turn, #ff02ec, #6000ff  ) ;
+                        }
+
                     }
                 }
             }
@@ -89,3 +93,4 @@
         color: white;
     }
 }
+

@@ -1,0 +1,25 @@
+@import './utils';
+
+#curriculum-section{
+   background: black;
+   color: white;
+    .curriculum{
+        margin: 0 4rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        &-left{
+            h3{
+                font-size: 40px;
+            }
+
+            p{
+                font-size: 17px;
+                margin-top: 2rem;
+                span{
+                    color: $span-color;
+                }
+            }
+        }
+    }
+
+}

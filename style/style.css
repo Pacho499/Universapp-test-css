@@ -74,11 +74,12 @@
 }
 
 #hero-section .hero-section .hero-left .box-esterno .box-interno {
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(79, 107, 101, 0.4)), to(rgba(20, 54, 52, 0.4)));
-  background: linear-gradient(360deg, rgba(79, 107, 101, 0.4), rgba(20, 54, 52, 0.4));
+  -webkit-box-shadow: inset 5px 6px 26px 2px white;
+          box-shadow: inset 5px 6px 26px 2px white;
+  background: rgba(51, 255, 217, 0.2);
   -webkit-backdrop-filter: blur(12px);
           backdrop-filter: blur(12px);
-  border: 2px solid rgba(255, 255, 255, 0.2);
+  border: 2px solid #11483d;
   border-radius: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -132,7 +133,7 @@
     color: #ff0076;
   }
   to {
-    width: 113px;
+    width: 128px;
     color: white;
   }
 }
@@ -143,7 +144,7 @@
     color: #ff0076;
   }
   to {
-    width: 113px;
+    width: 128px;
     color: white;
   }
 }

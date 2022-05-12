@@ -200,8 +200,8 @@
   width: 600px;
   height: 300px;
   border-radius: 20px;
-  -webkit-box-shadow: 3px 3px 26px white;
-          box-shadow: 3px 3px 26px white;
+  -webkit-box-shadow: 3px 3px 26px #33ffd9;
+          box-shadow: 3px 3px 26px #33ffd9;
 }
 
 #curriculum-section .curriculum .curriculum-right {
@@ -250,6 +250,10 @@
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
+}
+
+#need .external-need .need-container span {
+  color: #33ffd9;
 }
 
 #need .external-need .need-container .need-left {
@@ -306,5 +310,63 @@
 
 #need .external-need .need-container .need-right p {
   margin-top: 20px;
+}
+
+#review {
+  background: black;
+  color: white;
+}
+
+#review .review-container {
+  width: 90%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#review .review-container h3 {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-size: 40px;
+}
+
+#review .review-container .review-all {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+#review .review-container .review-all .review-external {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+#review .review-container .review-all .review-single {
+  position: relative;
+  bottom: 165px;
+  margin-left: 50px;
+  border: solid 2px #33ffd9;
+  border-radius: 20px;
+  -webkit-box-shadow: inset 2px 2px 26px #4004ca;
+          box-shadow: inset 2px 2px 26px #4004ca;
+  padding: 30PX;
+}
+
+#review .review-container .review-all .review-single h6 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  margin-top: 10px;
 }
 /*# sourceMappingURL=style.css.map */

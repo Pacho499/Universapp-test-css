@@ -1,0 +1,46 @@
+@import './utils';
+
+#review{
+    background: black;
+    color: white;
+    ;
+    .review-container{
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h3{
+            margin-top: 50px;
+            margin-bottom: 20px;
+            font-size: 40px; 
+        }
+
+        .review-all{
+            display:grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr ;
+            .review-external{
+               margin-left: 20px;
+               margin-bottom: 20px;
+            }
+
+            .review-single{
+                position: relative;
+                bottom: 165px;
+                margin-left: 50px;
+                border: solid 2px $Secondary-color;
+                border-radius: 20px;
+                box-shadow: inset 2px 2px 26px $primary-color;
+                padding: 30PX;
+
+                h6{
+                    font-size: 20px;
+                    margin-bottom: 20px;
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}

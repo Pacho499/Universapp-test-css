@@ -4,7 +4,8 @@
    background: black;
    color: white;
     .curriculum{
-        margin: 0 4rem;
+        width: 80%;
+        margin: auto;
         display: grid;
         grid-template-columns: 1fr 1fr;
         &-left{
@@ -19,7 +20,23 @@
                     color: $span-color;
                 }
             }
+
+            img{
+                
+                margin-top: 30px;
+                width: 600px;
+                height: 300px;
+                border-radius: 20px;
+                box-shadow: 3px 3px 26px white;
+            }
         }
+        
+       .curriculum-right{
+           position: relative;
+           left: 80px;
+       }
+            
+          
     }
 
 }

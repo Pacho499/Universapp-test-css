@@ -52,7 +52,8 @@
 }
 
 #hero-section .hero-section {
-  margin: 0 4rem;
+  width: 80%;
+  margin: auto;
   padding-top: 7rem;
   display: -ms-grid;
   display: grid;
@@ -173,7 +174,8 @@
 }
 
 #curriculum-section .curriculum {
-  margin: 0 4rem;
+  width: 80%;
+  margin: auto;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
@@ -191,5 +193,118 @@
 
 #curriculum-section .curriculum-left p span {
   color: #ff0076;
+}
+
+#curriculum-section .curriculum-left img {
+  margin-top: 30px;
+  width: 600px;
+  height: 300px;
+  border-radius: 20px;
+  -webkit-box-shadow: 3px 3px 26px white;
+          box-shadow: 3px 3px 26px white;
+}
+
+#curriculum-section .curriculum .curriculum-right {
+  position: relative;
+  left: 80px;
+}
+
+#need {
+  height: 600px;
+  background: black;
+  color: white;
+}
+
+#need .external-need {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 80%;
+  margin: auto;
+}
+
+#need .external-need h3 {
+  font-size: 40px;
+  padding-top: 100px;
+}
+
+#need .external-need .need-container {
+  height: 350px;
+  background: rgba(25, 25, 25, 0.5);
+  position: relative;
+  bottom: 450px;
+  border-radius: 20px;
+  -webkit-box-shadow: inset 2px 2px 26px #4004ca;
+          box-shadow: inset 2px 2px 26px #4004ca;
+  -webkit-backdrop-filter: blur(12px);
+          backdrop-filter: blur(12px);
+  border: solid 2px #33ffd9;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+}
+
+#need .external-need .need-container .need-left {
+  padding-left: 40px;
+  height: 400px;
+}
+
+#need .external-need .need-container .need-left h4 {
+  color: #ff0076;
+  font-size: 30px;
+  margin-top: 50px;
+}
+
+#need .external-need .need-container .need-left p {
+  margin-top: 20px;
+}
+
+#need .external-need .need-container .need-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#need .external-need .need-container .need-center .small {
+  opacity: 0;
+  position: relative;
+}
+
+#need .external-need .need-container .need-center .large {
+  position: relative;
+  bottom: 200px;
+}
+
+#need .external-need .need-container .need-right {
+  padding-right: 40px;
+  height: 400px;
+}
+
+#need .external-need .need-container .need-right h4 {
+  color: #ff0076;
+  font-size: 30px;
+  margin-top: 50px;
+}
+
+#need .external-need .need-container .need-right p {
+  margin-top: 20px;
 }
 /*# sourceMappingURL=style.css.map */

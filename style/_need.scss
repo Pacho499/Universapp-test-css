@@ -1,0 +1,75 @@
+@import './utils';
+
+#need{
+    height: 600px;
+    background: black;
+    color: white;
+    .external-need{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 80%;
+        margin: auto;
+        h3{
+            font-size: 40px;
+            padding-top: 100px;
+        }
+
+        .need-container{
+            height: 350px;
+            background: rgba(25,25,25, 0.5);
+            position: relative;
+            bottom: 450px;
+            border-radius: 20px;
+            box-shadow: inset 2px 2px 26px $primary-color;
+            backdrop-filter: blur(12px);
+            border: solid 2px $Secondary-color;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+
+            .need-left{
+                padding-left: 40px;
+                height: 400px;
+                h4{
+                    color: $span-color;
+                    font-size: 30px ;
+                    margin-top: 50px;
+                }
+
+                p{
+                    margin-top: 20px;
+                }
+            }
+
+            .need-center{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .small{
+                    opacity: 0;
+                    position: relative;
+                }
+                .large{
+                    position: relative;
+                    bottom: 200px;
+                }
+            }
+
+            .need-right{
+                padding-right: 40px;
+                height: 400px;
+                h4{
+                    color: $span-color;
+                    font-size: 30px ;
+                    margin-top: 50px;
+                }
+
+                p{
+                    margin-top: 20px;
+                }
+            }
+            
+        }
+    }
+}    

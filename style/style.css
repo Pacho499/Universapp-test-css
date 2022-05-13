@@ -236,16 +236,16 @@
 }
 
 #need .external-need .need-container {
+  border: solid 2px #33ffd9;
+  border-radius: 20px;
+  -webkit-box-shadow: inset 2px 2px 26px #4004ca;
+          box-shadow: inset 2px 2px 26px #4004ca;
   height: 350px;
   background: rgba(25, 25, 25, 0.5);
   position: relative;
   bottom: 450px;
-  border-radius: 20px;
-  -webkit-box-shadow: inset 2px 2px 26px #4004ca;
-          box-shadow: inset 2px 2px 26px #4004ca;
   -webkit-backdrop-filter: blur(12px);
           backdrop-filter: blur(12px);
-  border: solid 2px #33ffd9;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
@@ -354,13 +354,13 @@
 }
 
 #review .review-container .review-all .review-single {
-  position: relative;
-  bottom: 165px;
-  margin-left: 50px;
   border: solid 2px #33ffd9;
   border-radius: 20px;
   -webkit-box-shadow: inset 2px 2px 26px #4004ca;
           box-shadow: inset 2px 2px 26px #4004ca;
+  position: relative;
+  bottom: 165px;
+  margin-left: 50px;
   padding: 30PX;
 }
 

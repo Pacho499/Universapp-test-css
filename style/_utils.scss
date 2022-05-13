@@ -2,4 +2,17 @@
 $primary-color:rgb(64, 4, 202);
 $Secondary-color:rgb(51, 255, 217);
 $span-color:rgb(255, 0, 118);
-$span-color-2:rgb(51, 255, 217)
+$span-color-2:rgb(51, 255, 217);
+
+///utils
+@mixin border-led {
+    border: solid 2px $Secondary-color;
+    border-radius: 20px;
+    box-shadow: inset 2px 2px 26px $primary-color; 
+}
+
+@mixin gradient-text ($background-image){
+    background-image: $background-image;
+    background-clip: text;
+    color: transparent;
+}

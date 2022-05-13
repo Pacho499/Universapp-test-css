@@ -16,14 +16,12 @@
         }
 
         .need-container{
+            @include border-led;
             height: 350px;
             background: rgba(25,25,25, 0.5);
             position: relative;
             bottom: 450px;
-            border-radius: 20px;
-            box-shadow: inset 2px 2px 26px $primary-color;
             backdrop-filter: blur(12px);
-            border: solid 2px $Secondary-color;
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
 

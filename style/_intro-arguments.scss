@@ -1,0 +1,28 @@
+@import './utils';
+
+#intro-arguments{
+    @include main-background;
+    &-container{
+        width: 80%;
+        margin: auto;
+        @include flexcenter(row);
+
+        #intro-arguments-left{
+            margin-right: 30px;
+            max-width: 500px;
+           
+            h4{
+                font-size: 40px;
+            }
+
+            span{
+                color: $span-color;
+            }
+
+            p{
+                margin-top: 10px;
+                font-weight: bold;
+            }
+        }
+    }
+}

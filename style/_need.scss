@@ -5,9 +5,7 @@
     background: black;
     color: white;
     .external-need{
-        display: flex;
-        align-items: center;
-        flex-direction: column;
+       @include flexcenter(column);
         width: 80%;
         margin: auto;
         h3{
@@ -18,12 +16,12 @@
         .need-container{
             @include border-led;
             height: 350px;
-            background: rgba(25,25,25, 0.5);
             position: relative;
             bottom: 450px;
             backdrop-filter: blur(12px);
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
+            font-weight: bold;
 
             span{
                 color: $span-color-2;
@@ -44,10 +42,7 @@
             }
 
             .need-center{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
+                @include flexcenter(column);
                 .small{
                     opacity: 0;
                     position: relative;

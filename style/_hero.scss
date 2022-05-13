@@ -1,10 +1,9 @@
 @import './utils';
 
 #hero-section{
+    @include main-background;
     animation-name: text-change;
     animation-duration: 4s;
-    background: black;
-    color: white;
     height: 85vh;
     .hero-section{
         width: 80%;
@@ -17,6 +16,7 @@
 
             h1{
                 font-size: 60px;
+                
             }
 
             .p-hero{
@@ -41,11 +41,11 @@
                     left: 20px;
                     
                     .box-btn{
+                        color: white;
                         animation-name: hero-btn;
                         animation-duration: 4s;
                         background: linear-gradient(0.25turn, #ff007b, #ff02ec  );
                         border-radius: 20px;
-                        color: white;
                         text-decoration: none;
                         display: flex;
                         justify-content: space-between;

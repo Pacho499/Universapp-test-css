@@ -1,42 +1,39 @@
 @import './utils';
 
 #review{
-    background: black;
-    color: white;
-    ;
+    @include main-background;
+    height: 600px;
+    
     .review-container{
-        width: 90%;
-        margin: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-        h3{
+        @include flexcenter (column);
+        
+         h3{
             margin-top: 50px;
             margin-bottom: 20px;
             font-size: 40px; 
         }
 
         .review-all{
-            display:grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr ;
-            .review-external{
-               margin-left: 20px;
-               margin-bottom: 20px;
-            }
+            margin-left: 50px;
+            display: flex;
 
             .review-single{
                 @include border-led;
+                height: 350px;
+                width: 300px;
                 position: relative;
                 bottom: 165px;
-                margin-left: 50px;
+                margin: 0 50px;
                 padding: 30PX;
 
                 h6{
                     font-size: 20px;
                     margin-bottom: 20px;
                     margin-top: 10px;
+                }
+
+                p{
+                    padding-bottom: 10px;
                 }
             }
         }

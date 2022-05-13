@@ -4,6 +4,7 @@
     @include main-background;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
 
     &-container{
         display: flex;
@@ -68,5 +69,12 @@
 
             
         }
+    }
+
+    .img{
+        height: 350px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }

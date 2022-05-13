@@ -1,0 +1,47 @@
+@import'./utils';
+
+#solutions{
+    @include main-background; 
+    &-external{
+        padding-top: 200px;
+        width: 80%;
+        margin: auto;
+        position: relative;
+        
+        #img-left{
+          position: absolute;  
+          left: -80px;
+          bottom: -40px;
+        }
+        #img-right{
+            position: absolute;
+            right: 80px;
+            bottom: -400px;
+        }
+
+        .text{
+            @include flexcenter(column);
+            h3{
+                text-align: center;
+                font-size: 40px;
+                color: $span-color-2;
+            }
+
+            p{
+                max-width: 450px;
+                padding-bottom: 30px;
+                text-align: center;
+            }
+        }
+
+        .solution-table{
+            @include border-led;
+            backdrop-filter: blur(12px);
+            table{
+                width: 100%;
+            }
+        }
+    }
+
+
+}

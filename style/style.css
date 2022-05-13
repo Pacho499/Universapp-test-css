@@ -545,6 +545,7 @@
 #solutions {
   background: black;
   color: white;
+  height: 1000px;
 }
 
 #solutions-external {
@@ -606,5 +607,20 @@
 
 #solutions-external .solution-table table {
   width: 100%;
+  text-align: center;
+}
+
+#solutions-external .solution-table table thead {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+#solutions-external .solution-table table tbody .first-item-table {
+  text-align: left;
+  padding-left: 20px;
+}
+
+#solutions-external .solution-table table tbody td {
+  padding: 10px;
 }
 /*# sourceMappingURL=style.css.map */

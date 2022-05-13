@@ -2,6 +2,7 @@
 
 #solutions{
     @include main-background; 
+    height: 1000px;
     &-external{
         padding-top: 200px;
         width: 80%;
@@ -39,6 +40,22 @@
             backdrop-filter: blur(12px);
             table{
                 width: 100%;
+                text-align: center;
+                thead{
+                
+                   font-size: 40px;
+                   margin-bottom: 20px;
+                }
+                tbody{
+                    .first-item-table{
+                        text-align: left;
+                        padding-left: 20px ;
+                    }
+
+                    td{
+                        padding: 10px;
+                    }
+                }
             }
         }
     }

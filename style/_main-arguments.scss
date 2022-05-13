@@ -1,0 +1,72 @@
+@import './utils';
+
+#main-arguments{
+    @include main-background;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    &-container{
+        display: flex;
+        @include border-led;
+        width: 500px;
+        height: 350px;
+        margin: 0 30px;
+        
+        #main-arguments-left{
+            padding-left: 30px;
+            padding-top: 30px;
+
+            h5{
+                font-size: 30px;
+                padding-bottom: 20px;
+                color: $span-color;
+            }
+
+            .bio-container{
+                
+                display: flex;
+                flex-direction: column;
+                width: 250px;
+                text-align: left;
+                
+                span{
+                    color: $span-color-2
+                }
+                .hour{
+                    @include border-led;
+                    width: fit-content;
+                    padding: 10px; 
+                    margin: 30px
+                }
+            }
+            
+            
+            
+
+            #insegnante{
+                @include flexcenter(row);
+                text-align: left;
+                justify-content: left;
+                position: relative;
+                right: 10px;
+                p{
+                    padding:10px;
+                }
+            }
+        }
+
+        #main-arguments-right{
+           @include flexcenter(column);
+        
+            
+                img{
+                    margin-right: 20px;
+                    margin-top: 30px;
+                }
+            
+           
+
+            
+        }
+    }
+}

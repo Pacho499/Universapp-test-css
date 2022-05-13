@@ -438,7 +438,7 @@
   background: rgba(25, 25, 25, 0.5);
   width: 500px;
   height: 350px;
-  margin: 0 30px;
+  margin: 30px 10px;
 }
 
 #main-arguments-container #main-arguments-left {

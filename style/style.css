@@ -8,6 +8,7 @@
 
 #header {
   background: black;
+  color: white;
   height: 15vh;
 }
 
@@ -96,13 +97,13 @@
 }
 
 #hero-section .hero-section .hero-left .box-esterno .box-interno .box-btn {
+  background: -webkit-gradient(linear, left top, right top, from(#ff007b), to(#ff02ec));
+  background: linear-gradient(0.25turn, #ff007b, #ff02ec);
   color: white;
   -webkit-animation-name: hero-btn;
           animation-name: hero-btn;
   -webkit-animation-duration: 4s;
           animation-duration: 4s;
-  background: -webkit-gradient(linear, left top, right top, from(#ff007b), to(#ff02ec));
-  background: linear-gradient(0.25turn, #ff007b, #ff02ec);
   border-radius: 20px;
   text-decoration: none;
   display: -webkit-box;
@@ -558,13 +559,13 @@
 #solutions-external #img-left {
   position: absolute;
   left: -80px;
-  bottom: -40px;
+  bottom: 450px;
 }
 
 #solutions-external #img-right {
   position: absolute;
-  right: 80px;
-  bottom: -400px;
+  right: -120px;
+  bottom: 60px;
 }
 
 #solutions-external .text {
@@ -586,6 +587,7 @@
 #solutions-external .text h3 {
   text-align: center;
   font-size: 40px;
+  padding: 30px;
   color: #33ffd9;
 }
 
@@ -596,6 +598,22 @@
 }
 
 #solutions-external .solution-table {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#solutions-external .solution-table table {
   border: solid 2px #33ffd9;
   border-radius: 20px;
   -webkit-box-shadow: inset 2px 2px 26px #4004ca;
@@ -603,16 +621,13 @@
   background: rgba(25, 25, 25, 0.5);
   -webkit-backdrop-filter: blur(12px);
           backdrop-filter: blur(12px);
-}
-
-#solutions-external .solution-table table {
+  padding: 50px;
   width: 100%;
   text-align: center;
 }
 
 #solutions-external .solution-table table thead {
   font-size: 40px;
-  margin-bottom: 20px;
 }
 
 #solutions-external .solution-table table tbody .first-item-table {
@@ -622,5 +637,59 @@
 
 #solutions-external .solution-table table tbody td {
   padding: 10px;
+}
+
+#solutions-external .solution-table table .corsi {
+  color: green;
+}
+
+#solutions-external .solution-table table .universapp {
+  color: #ff0076;
+}
+
+#solutions-external .solution-table table .bootcamp {
+  color: orange;
+}
+
+#solutions-external .solution-table .extern-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  bottom: 100px;
+}
+
+#solutions-external .solution-table .extern-btn .intern-btn {
+  position: relative;
+  bottom: 135px;
+  border: solid 2px #33ffd9;
+  border-radius: 20px;
+  -webkit-box-shadow: inset 2px 2px 26px #4004ca;
+          box-shadow: inset 2px 2px 26px #4004ca;
+  background: rgba(25, 25, 25, 0.5);
+  color: white;
+  padding: 20px 30px;
+  background: -webkit-gradient(linear, left top, right top, from(#ff007b), to(#ff02ec));
+  background: linear-gradient(0.25turn, #ff007b, #ff02ec);
+}
+
+#solutions-external .solution-table .extern-btn .intern-btn a {
+  color: white;
+  text-decoration: none;
+}
+
+#solutions-external .solution-table .extern-btn .intern-btn:hover {
+  background: -webkit-gradient(linear, left top, right top, from(#ff02ec), to(#6000ff));
+  background: linear-gradient(0.25turn, #ff02ec, #6000ff);
 }
 /*# sourceMappingURL=style.css.map */

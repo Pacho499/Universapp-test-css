@@ -1,8 +1,7 @@
 @import './utils';
 
 #curriculum-section{
-   background: black;
-   color: white;
+   @include main-background;
     .curriculum{
         width: 80%;
         margin: auto;

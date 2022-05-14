@@ -12,12 +12,12 @@
         #img-left{
           position: absolute;  
           left: -80px;
-          bottom: -40px;
+          bottom: 450px;
         }
         #img-right{
             position: absolute;
-            right: 80px;
-            bottom: -400px;
+            right: -120px;
+            bottom: 60px;
         }
 
         .text{
@@ -25,6 +25,7 @@
             h3{
                 text-align: center;
                 font-size: 40px;
+                padding: 30px;
                 color: $span-color-2;
             }
 
@@ -36,15 +37,16 @@
         }
 
         .solution-table{
-            @include border-led;
-            backdrop-filter: blur(12px);
+            @include flexcenter(column);
+            
             table{
+                @include border-led;
+                backdrop-filter: blur(12px);
+                padding: 50px;
                 width: 100%;
                 text-align: center;
                 thead{
-                
-                   font-size: 40px;
-                   margin-bottom: 20px;
+                    font-size: 40px;
                 }
                 tbody{
                     .first-item-table{
@@ -55,6 +57,44 @@
                     td{
                         padding: 10px;
                     }
+                }
+
+                .corsi{
+                    color: green;
+                }
+
+                .universapp{
+                    color: $span-color
+                }
+
+                .bootcamp{
+                    color: orange
+                }
+            }
+
+            .extern-btn{
+                @include flexcenter(column);
+                position: relative;
+                bottom: 100px;
+
+                .intern-btn{
+                    position: relative;
+                    bottom: 135px;
+                    @include border-led;
+                    color: white;
+                    padding: 20px 30px;
+                    @include btn-background;
+
+                    a{
+                        color: white;
+                        text-decoration: none;
+                    }
+                    
+                    &:hover{
+                        @include btn-background-hover;
+                    }
+                    
+                    
                 }
             }
         }

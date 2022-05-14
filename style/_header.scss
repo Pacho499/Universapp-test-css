@@ -1,7 +1,7 @@
 @import './utils';
 
 #header{
-    background: black;
+    @include main-background;
     height: 15vh;
     
 

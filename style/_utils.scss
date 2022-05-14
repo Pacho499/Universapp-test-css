@@ -24,3 +24,10 @@ $span-color-2:rgb(51, 255, 217);
     color: white;
 }
 
+@mixin btn-background {
+    background: linear-gradient(0.25turn, #ff007b, #ff02ec );
+}
+
+@mixin btn-background-hover{
+    background: linear-gradient(0.25turn, #ff02ec, #6000ff); 
+}

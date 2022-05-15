@@ -640,7 +640,7 @@
 }
 
 #solutions-external .solution-table table .corsi {
-  color: green;
+  color: greenyellow;
 }
 
 #solutions-external .solution-table table .universapp {
@@ -648,7 +648,7 @@
 }
 
 #solutions-external .solution-table table .bootcamp {
-  color: orange;
+  color: yellow;
 }
 
 #solutions-external .solution-table .extern-btn {
@@ -691,5 +691,105 @@
 #solutions-external .solution-table .extern-btn .intern-btn:hover {
   background: -webkit-gradient(linear, left top, right top, from(#ff02ec), to(#6000ff));
   background: linear-gradient(0.25turn, #ff02ec, #6000ff);
+}
+
+#tech {
+  background: black;
+  color: white;
+}
+
+#tech #container-extern {
+  padding-top: 50px;
+  text-align: center;
+}
+
+#tech #container-extern h3 {
+  font-size: 40px;
+  position: relative;
+  top: 100px;
+}
+
+#tech #container-extern #gemma-grande {
+  position: absolute;
+  left: -500px;
+  z-index: 3;
+}
+
+#tech #container-extern #gemma-verde {
+  position: relative;
+  left: 600px;
+  z-index: 1;
+}
+
+#tech #container-extern #container-intern {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 50px 150px;
+  border: solid 2px #33ffd9;
+  border-radius: 20px;
+  -webkit-box-shadow: inset 2px 2px 26px #4004ca;
+          box-shadow: inset 2px 2px 26px #4004ca;
+  background: rgba(25, 25, 25, 0.5);
+  position: relative;
+  z-index: 2;
+  bottom: 500px;
+}
+
+#tech #container-extern #container-intern #container-intern-left {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+#tech #container-extern #container-intern #container-intern-left h4 {
+  font-size: 30px;
+  padding: 30px;
+  text-align: left;
+}
+
+#tech #container-extern #container-intern #container-intern-left span {
+  color: #ff0076;
+}
+
+#tech #container-extern #container-intern #container-intern-left p {
+  font-weight: bold;
+  padding: 30px;
+  padding-bottom: 60px;
+  text-align: left;
+}
+
+#tech #container-extern #container-intern #container-intern-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: left;
+  width: 300px;
+}
+
+#tech #container-extern #container-intern #container-intern-right h4 {
+  font-size: 30px;
+  padding-bottom: 30px;
+}
+
+#tech #container-extern #container-intern #container-intern-right p {
+  font-weight: bold;
+  padding-bottom: 10px;
+  padding-right: 20px;
+}
+
+#tech #container-extern #container-intern #container-intern-right span {
+  color: #ff0076;
 }
 /*# sourceMappingURL=style.css.map */

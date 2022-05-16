@@ -12,31 +12,41 @@
         }
 
         #gemma-grande{
-            position: absolute;
-            left: -500px;
             z-index: 3;
+            position: absolute;
+            left: -450px;
+          
         }
 
         #gemma-verde{
-            position: relative;
-            left: 600px;
+            position: absolute;
+            right: -200px;
             z-index: 1;
+        }
+
+        #gemma-piccola{
+            position: relative;
+            z-index: 3;
+            top: 400px;
+            left: 200px;
         }
 
         #container-intern{
             display: flex;
             margin: 50px 150px;
             @include border-led;
+            backdrop-filter: blur(12px);
             position: relative;
+            bottom: 200px;
             z-index: 2;
-            bottom: 500px;
+            
 
             #container-intern-left{
                 display: grid;
                 grid-template-columns: 1fr 1fr;
                 h4{
                     font-size: 30px;
-                    padding: 30px;
+                    padding: 20px;
                     text-align: left;
                         
                 }
@@ -62,7 +72,7 @@
                 width: 300px;
                 h4{
                     font-size: 30px;
-                    padding-bottom:30px ;
+                    padding-bottom:20px ;
                 }
 
                 p{

@@ -1,13 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
 @import './utils';
-*{
+
+body{
+    overflow-x: hidden
+}
+#mains{
+    @include main-background;
+    
+}
+
+*{ 
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
     letter-spacing: 1px;
 }
-
-
 @import './_header';
 @import './hero';
 @import './curriculum';
@@ -17,3 +24,4 @@
 @import './main-arguments';
 @import './solutions';
 @import './tech';
+@import './form'

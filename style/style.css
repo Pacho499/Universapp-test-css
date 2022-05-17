@@ -970,4 +970,100 @@ body {
   background: -webkit-gradient(linear, left top, right top, from(#ff02ec), to(#6000ff));
   background: linear-gradient(0.25turn, #ff02ec, #6000ff);
 }
+
+.footer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  height: 300px;
+}
+
+.footer .footer-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #33ffd9;
+  color: #4004ca;
+}
+
+.footer .footer-left .text-left {
+  width: 450px;
+}
+
+.footer .footer-left .text-left h6 {
+  font-size: 24px;
+  padding-bottom: 20px;
+}
+
+.footer .footer-left .text-left .social {
+  padding-bottom: 20px;
+}
+
+.footer .footer-left .text-left .social a {
+  padding-right: 90px;
+}
+
+.footer .footer-left .text-left .policy {
+  width: 400px;
+  padding: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 15px;
+}
+
+.footer .footer-left .text-left .policy a {
+  text-decoration: none;
+  color: #4004ca;
+  padding-right: 10px;
+}
+
+.footer .footer-left .text-left .iva {
+  font-size: 15px;
+}
+
+.footer .footer-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #4004ca;
+  color: #33ffd9;
+}
+
+.footer .footer-right .text-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer .footer-right .text-right h6 {
+  width: 400px;
+  font-size: 24px;
+}
+
+.footer .footer-right .text-right img {
+  width: 50px;
+  position: relative;
+  left: 300px;
+}
 /*# sourceMappingURL=style.css.map */

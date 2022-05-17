@@ -1,0 +1,32 @@
+@import './utils';
+
+#start-now{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    .extern-btn{
+        text-align: center;
+        width: 70%;
+        h6{
+            font-size: 21px;
+            padding-bottom: 20px;
+        }
+
+        a{  
+            display: flex;
+            justify-content: center;
+            @include btn-background;
+            border-radius: 100px;
+            padding: 20px;
+            text-decoration: none;
+            color: white;
+            box-shadow: 0 4px 15px 0 rgb(116,79,168);
+            &:hover{
+                @include btn-background-hover;
+            }
+            
+        }
+    }
+}

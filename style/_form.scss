@@ -67,6 +67,7 @@
                 
                 .box-btn{
                     @include btn-background;
+                    padding: 0 20px;
                     color: white;
                     border-radius: 20px;
                     text-decoration: none;

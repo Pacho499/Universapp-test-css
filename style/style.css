@@ -906,6 +906,7 @@ body {
 #form #form-right .box-esterno .box-interno .box-btn {
   background: -webkit-gradient(linear, left top, right top, from(#ff007b), to(#ff02ec));
   background: linear-gradient(0.25turn, #ff007b, #ff02ec);
+  padding: 0 20px;
   color: white;
   border-radius: 20px;
   text-decoration: none;
@@ -922,6 +923,50 @@ body {
 }
 
 #form #form-right .box-esterno .box-interno .box-btn:hover {
+  background: -webkit-gradient(linear, left top, right top, from(#ff02ec), to(#6000ff));
+  background: linear-gradient(0.25turn, #ff02ec, #6000ff);
+}
+
+#start-now {
+  width: 80%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 300px;
+}
+
+#start-now .extern-btn {
+  text-align: center;
+  width: 70%;
+}
+
+#start-now .extern-btn h6 {
+  font-size: 21px;
+  padding-bottom: 20px;
+}
+
+#start-now .extern-btn a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: -webkit-gradient(linear, left top, right top, from(#ff007b), to(#ff02ec));
+  background: linear-gradient(0.25turn, #ff007b, #ff02ec);
+  border-radius: 100px;
+  padding: 20px;
+  text-decoration: none;
+  color: white;
+  -webkit-box-shadow: 0 4px 15px 0 #744fa8;
+          box-shadow: 0 4px 15px 0 #744fa8;
+}
+
+#start-now .extern-btn a:hover {
   background: -webkit-gradient(linear, left top, right top, from(#ff02ec), to(#6000ff));
   background: linear-gradient(0.25turn, #ff02ec, #6000ff);
 }

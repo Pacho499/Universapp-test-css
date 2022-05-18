@@ -8,6 +8,10 @@
        @include flexcenter(column);
         width: 80%;
         margin: auto;
+        @include tablet{
+            width: 95%;
+            margin: auto;
+        }
         h3{
             font-size: 40px;
             padding-top: 100px;
@@ -30,6 +34,7 @@
             .need-left{
                 padding-left: 40px;
                 height: 400px;
+                min-width: 350px;
                 h4{
                     color: $span-color;
                     font-size: 30px ;
@@ -44,18 +49,24 @@
             .need-center{
                 @include flexcenter(column);
                 .small{
-                    opacity: 0;
+                    display: none;
                     position: relative;
+                    @include tablet{
+                        display: block;
+                    }
                 }
                 .large{
-                    position: relative;
-                    bottom: 200px;
+                    display: block;
+                    @include tablet{
+                        display: none;
+                    }
                 }
             }
 
             .need-right{
                 padding-right: 40px;
                 height: 400px;
+                min-width: 350px;
                 h4{
                     color: $span-color;
                     font-size: 30px ;

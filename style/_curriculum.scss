@@ -1,4 +1,5 @@
 @import './utils';
+@import './media-queries';
 
 #curriculum-section{
    @include main-background;
@@ -22,12 +23,15 @@
             }
 
             img{
-                
+                display: block;
                 margin-top: 30px;
                 width: 600px;
                 height: 300px;
                 border-radius: 20px;
                 box-shadow: 3px 3px 26px $Secondary-color;
+                @include tablet{
+                    display: none;
+                }
             }
         }
         

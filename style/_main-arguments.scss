@@ -1,10 +1,16 @@
 @import './utils';
+@import './media-queries';
 
 #main-arguments{
     @include main-background;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
+    @include tablet{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+    }
 
     &-container{
         display: flex;
@@ -76,5 +82,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        @include tablet{
+            display: none;
+        }
     }
 }

@@ -137,10 +137,21 @@ body {
   background: linear-gradient(0.25turn, #ff02ec, #6000ff);
 }
 
+@media screen and (max-width: 1585px) {
+  #hero-section .hero-section .hero-right .cube_L {
+    display: none;
+  }
+}
+
 #hero-section .hero-section .hero-right .cube_S {
-  position: relative;
-  bottom: 400px;
-  opacity: 0;
+  display: none;
+}
+
+@media screen and (max-width: 1585px) {
+  #hero-section .hero-section .hero-right .cube_S {
+    display: block;
+    margin: 0 15%;
+  }
 }
 
 @-webkit-keyframes hero-btn {
@@ -212,12 +223,19 @@ body {
 }
 
 #curriculum-section .curriculum-left img {
+  display: block;
   margin-top: 30px;
   width: 600px;
   height: 300px;
   border-radius: 20px;
   -webkit-box-shadow: 3px 3px 26px #33ffd9;
           box-shadow: 3px 3px 26px #33ffd9;
+}
+
+@media screen and (max-width: 1585px) {
+  #curriculum-section .curriculum-left img {
+    display: none;
+  }
 }
 
 #curriculum-section .curriculum .curriculum-right {
@@ -247,6 +265,13 @@ body {
           flex-direction: column;
   width: 80%;
   margin: auto;
+}
+
+@media screen and (max-width: 1585px) {
+  #need .external-need {
+    width: 95%;
+    margin: auto;
+  }
 }
 
 #need .external-need h3 {
@@ -279,6 +304,7 @@ body {
 #need .external-need .need-container .need-left {
   padding-left: 40px;
   height: 400px;
+  min-width: 350px;
 }
 
 #need .external-need .need-container .need-left h4 {
@@ -308,18 +334,30 @@ body {
 }
 
 #need .external-need .need-container .need-center .small {
-  opacity: 0;
+  display: none;
   position: relative;
 }
 
+@media screen and (max-width: 1585px) {
+  #need .external-need .need-container .need-center .small {
+    display: block;
+  }
+}
+
 #need .external-need .need-container .need-center .large {
-  position: relative;
-  bottom: 200px;
+  display: block;
+}
+
+@media screen and (max-width: 1585px) {
+  #need .external-need .need-container .need-center .large {
+    display: none;
+  }
 }
 
 #need .external-need .need-container .need-right {
   padding-right: 40px;
   height: 400px;
+  min-width: 350px;
 }
 
 #need .external-need .need-container .need-right h4 {
@@ -336,6 +374,12 @@ body {
   background: black;
   color: white;
   height: 600px;
+}
+
+@media screen and (max-width: 1585px) {
+  #review {
+    height: 1400px;
+  }
 }
 
 #review .review-container {
@@ -367,14 +411,23 @@ body {
   display: flex;
 }
 
+@media screen and (max-width: 1585px) {
+  #review .review-container .review-all {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
 #review .review-container .review-all .review-single {
   border: solid 2px #33ffd9;
   border-radius: 20px;
   -webkit-box-shadow: inset 2px 2px 26px #4004ca;
           box-shadow: inset 2px 2px 26px #4004ca;
   background: rgba(25, 25, 25, 0.5);
-  height: 350px;
-  width: 300px;
+  height: 450px;
+  width: 220px;
   position: relative;
   bottom: 165px;
   margin: 0 50px;
@@ -441,6 +494,16 @@ body {
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
   justify-items: center;
+}
+
+@media screen and (max-width: 1585px) {
+  #main-arguments {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    justify-items: center;
+  }
 }
 
 #main-arguments-container {
@@ -555,6 +618,12 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media screen and (max-width: 1585px) {
+  #main-arguments .img {
+    display: none;
+  }
 }
 
 #solutions {
@@ -824,6 +893,24 @@ body {
   display: flex;
 }
 
+@media screen and (max-width: 1585px) {
+  #form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 #form #form-left {
   padding: 20px;
 }
@@ -850,6 +937,12 @@ body {
 #form #form-line {
   height: 400px;
   border: 1px solid #ff0076;
+}
+
+@media screen and (max-width: 1585px) {
+  #form #form-line {
+    display: none;
+  }
 }
 
 #form #form-right {

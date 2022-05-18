@@ -67,10 +67,18 @@
         }
           
         .hero-right{
+            .cube_L{
+                @include tablet{
+                    display: none;
+                }
+            }
+
             .cube_S{
-                position: relative;
-                bottom: 400px;
-                opacity: 0;
+                display: none;
+                @include tablet{
+                    display: block;
+                    margin: 0 15% ;
+                }
             }
         }  
         

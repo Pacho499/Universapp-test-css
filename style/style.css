@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   overflow-x: hidden;
 }
@@ -52,6 +56,7 @@ body {
 }
 
 #hero-section {
+  display: block;
   background: black;
   color: white;
   -webkit-animation-name: text-change;

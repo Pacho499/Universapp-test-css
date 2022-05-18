@@ -1,10 +1,13 @@
 @import './utils';
+@import './media-queries';
 
 #hero-section{
+    display: block;
     @include main-background;
     animation-name: text-change;
     animation-duration: 4s;
     height: 85vh;
+   
     .hero-section{
         width: 80%;
         margin: auto;
@@ -55,6 +58,8 @@
                         &:hover{
                            @include btn-background-hover;
                         }
+
+                        
 
                     }
                 }

@@ -7,17 +7,21 @@
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
     @include tablet{
-        display: grid;
         grid-template-columns: 1fr 1fr;
         justify-items: center;
     }
-
+    @include smartphone{
+        grid-template-columns: 1fr;
+    }
     &-container{
         display: flex;
         @include border-led;
         width: 500px;
         height: 350px;
         margin: 30px 10px;
+        @include smartphone{
+            width: 300px;
+        }
         
         #main-arguments-left{
             padding-left: 30px;
@@ -27,6 +31,9 @@
                 font-size: 30px;
                 padding-bottom: 20px;
                 color: $span-color;
+                @include smartphone{
+                    font-size: 24px;
+                }
             }
 
             .bio-container{
@@ -35,7 +42,6 @@
                 flex-direction: column;
                 width: 250px;
                 text-align: left;
-                
                 span{
                     color: $span-color-2
                 }
@@ -69,6 +75,9 @@
                 img{
                     margin-right: 20px;
                     margin-top: 30px;
+                    @include smartphone{
+                        display: none;
+                    }
                 }
             
            

@@ -7,6 +7,9 @@
     @include tablet{
         height: 1400px
     }
+    @include smartphone{
+        margin-top: 450px
+    }
     
     .review-container{
         @include flexcenter (column);
@@ -15,6 +18,9 @@
             margin-top: 50px;
             margin-bottom: 20px;
             font-size: 40px; 
+            @include smartphone{
+                font-size: 24px;
+            }
         }
 
         .review-all{
@@ -25,26 +31,38 @@
                 grid-template-columns: 1fr 1fr
             }
 
-            .review-single{
-                @include border-led;
-                height: 450px;
-                width: 220px;
-                position: relative;
-                bottom: 165px;
-                margin: 0 50px;
-                padding: 30PX;
+            @include smartphone{
+                display: flex;
+                flex-direction: column;
+            }
 
-                h6{
-                    color: $span-color;
-                    font-size: 20px;
-                    margin-bottom: 20px;
-                    margin-top: 10px;
-                }
-
-                p{  
-                    padding-bottom: 10px;
+            .review-external{
+                height: 600px;
+                .review-single{
+                    @include border-led;
+                    height: 450px;
+                    width: 220px;
+                    position: relative;
+                    bottom: 165px;
+                    margin: 0 50px;
+                    padding: 30PX;
+        
+                    h6{
+                        color: $span-color;
+                        font-size: 20px;
+                        margin-bottom: 20px;
+                        margin-top: 10px;
+                    }
+        
+                    p{  
+                        padding-bottom: 10px;
+                    }
                 }
             }
+            
+            
+
+            
         }
     }
 }

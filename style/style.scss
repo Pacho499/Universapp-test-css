@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
 @import './utils';
+@import './media-queries';
 
 html{
     scroll-behavior: smooth;
 }
 
 body{
-    overflow-x: hidden
+    overflow-x: hidden;
+
 }
 #mains{
     @include main-background;

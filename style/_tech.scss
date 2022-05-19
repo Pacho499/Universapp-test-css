@@ -2,26 +2,33 @@
 
 #tech{
     @include main-background;
+    
     #container-extern{
         padding-top: 50px;
         text-align: center;
         h3{
             font-size: 40px;
-            position: relative;
-            top: 100px;
+            @include smartphone{
+                font-size: 24px;
+            }
         }
 
         #gemma-grande{
             z-index: 3;
             position: absolute;
             left: -450px;
+            @include tablet{
+                display: none;
+            }
           
         }
 
         #gemma-verde{
             position: absolute;
-            right: -200px;
             z-index: 1;
+            @include tablet{
+                display: none;
+            }
         }
 
         #gemma-piccola{
@@ -29,6 +36,13 @@
             z-index: 3;
             top: 400px;
             left: 200px;
+            @include tablet{
+                left: -550px;
+                top:  450px;
+            }
+            @include smartphone{
+                display: none;
+            }
         }
 
         #container-intern{
@@ -39,15 +53,27 @@
             position: relative;
             bottom: 200px;
             z-index: 2;
+            @include smartphone{
+                flex-direction: column;
+                width: 95%;
+                margin: auto;
+                margin-top: 250px;
+            }
             
 
             #container-intern-left{
                 display: grid;
                 grid-template-columns: 1fr 1fr;
+                @include smartphone{
+                    grid-template-columns: 1fr;
+                }
                 h4{
                     font-size: 30px;
                     padding: 20px;
                     text-align: left;
+                    @include smartphone{
+                        font-size: 24px;
+                    }
                         
                 }
     
@@ -70,15 +96,22 @@
                 justify-content:space-between;
                 text-align: left;
                 width: 300px;
+                @include smartphone{
+                    margin-left: 20px;
+                }
                 h4{
                     font-size: 30px;
-                    padding-bottom:20px ;
+                    padding-bottom:20px;
+                    @include smartphone{
+                        font-size: 24px;
+                    }
                 }
 
                 p{
                     font-weight: bold; 
-                    padding-bottom: 10px;
+                    padding-bottom: 20px;
                     padding-right: 20px; 
+
                       
                 }
 

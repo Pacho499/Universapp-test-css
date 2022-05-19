@@ -3,13 +3,15 @@
 #header{
     @include main-background;
     height: 15vh;
+   
     
 
     .header-inside{
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin: 0 14rem;
+        width: 75%;
+        margin: auto;
         padding-top: 1.6rem;
 
         .nav_bar{

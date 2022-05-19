@@ -40,6 +40,9 @@
             font-size: 40px;
             color: $span-color-2;
             padding-bottom: 30px;
+            @include smartphone{
+                font-size: 24px;
+            }
         }
 
         .p-right{
@@ -56,10 +59,21 @@
                 border: solid 2px rgb(26,26,26);
                 background-color: rgb(26,26,26) ;
                 width: 300px;
+                color: white;
+
+                &:focus{
+                    outline: none;
+                    
+                }
             }
+            
         }
 
         .box-esterno{
+            @include smartphone{
+                position: relative;
+                right: 150px;
+            }
             .box-interno{
                 @include border-led;
                 backdrop-filter: blur(12px);

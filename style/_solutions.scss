@@ -1,5 +1,5 @@
 @import'./utils';
-
+@import './media-queries';
 #solutions{
     @include main-background; 
     height: 1000px;
@@ -8,16 +8,26 @@
         width: 80%;
         margin: auto;
         position: relative;
+        @include tablet{
+            width: 95%;
+            margin: auto;
+        }
         
         #img-left{
           position: absolute;  
           left: -80px;
           bottom: 450px;
+          @include tablet{
+              display: none;
+          }
         }
         #img-right{
             position: absolute;
             right: -120px;
             bottom: 60px;
+            @include tablet{
+                display: none;
+            }
         }
 
         .text{
@@ -27,12 +37,16 @@
                 font-size: 40px;
                 padding: 30px;
                 color: $span-color-2;
+                @include smartphone{
+                    font-size: 24px;
+                }
             }
 
             p{
                 max-width: 450px;
                 padding-bottom: 30px;
                 text-align: center;
+                font-size: 17px
             }
         }
 
@@ -45,10 +59,15 @@
                 padding: 50px;
                 width: 100%;
                 text-align: center;
+                
                 thead{
                     font-size: 40px;
+                    @include smartphone{
+                        font-size: 16px;
+                    }
                 }
                 tbody{
+                    
                     .first-item-table{
                         text-align: left;
                         padding-left: 20px ;
@@ -56,8 +75,11 @@
 
                     td{
                         padding: 10px;
+                      
                     }
                 }
+
+               
 
                 .corsi{
                     color: greenyellow;
@@ -69,6 +91,13 @@
 
                 .bootcamp{
                     color: yellow
+                }
+
+                .prezzi{
+                    padding-bottom: 100px;
+                    @include smartphone{
+                        padding-bottom: 150px
+                    }
                 }
             }
 

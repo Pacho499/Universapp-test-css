@@ -1,7 +1,10 @@
 @import './utils';
-
+@import './media-queries';
 #intro-arguments{
     @include main-background;
+    @include smartphone{
+        margin-top: 1200px;
+    }
     &-container{
         width: 80%;
         margin: auto;
@@ -13,6 +16,9 @@
            
             h4{
                 font-size: 40px;
+                @include smartphone{
+                    font-size: 24px;
+                }
             }
 
             span{
@@ -22,6 +28,12 @@
             p{
                 margin-top: 10px;
                 font-weight: bold;
+            }
+        }
+
+        #intro-arguments-right{
+            @include smartphone{
+                display: none;
             }
         }
     }

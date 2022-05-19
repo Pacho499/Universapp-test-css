@@ -4,12 +4,20 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: 300px;
+    width: 100%;
+    margin: auto;
+    @include smartphone{
+        grid-template-columns: 1fr;
+    }
     .footer-left{
         display: flex;
         justify-content: center;
         align-items: center;
         background: $span-color-2 ;
         color: rgb(64, 4, 202);
+        @include smartphone{
+            height: 300px;
+        }
         .text-left{
             width: 450px;
             h6{
